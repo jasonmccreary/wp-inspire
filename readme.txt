@@ -2,6 +2,8 @@
 Stable tag: 0.1.0
 Tested up to: 6.4
 Requires at least: 4.6
+License: GPLv2
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 A port of the Inspire command from Laravel to add an inspirational quote in the upper right of your admin screen.
 
