@@ -37,7 +37,7 @@ function wp_inspire_get_quote()
         'When there is no desire, all things are at peace. - Laozi',
     ];
 
-    return wptexturize($quotes[mt_rand(0, count($quotes) - 1)]);
+    return wptexturize($quotes[wp_rand(0, count($quotes) - 1)]);
 }
 
 // This just echoes the chosen line, we'll position it later.
@@ -51,8 +51,8 @@ function wp_inspire()
 
     printf(
         '<p id="wp-inspire"><span dir="ltr"%s>%s</span></p>',
-        $lang,
-        $chosen
+        esc_attr($lang),
+        esc_html($chosen)
     );
 }
 
