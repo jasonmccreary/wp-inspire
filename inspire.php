@@ -1,7 +1,4 @@
 <?php
-/**
- * @version 1.7.2
- */
 /*
 Plugin Name: Inspire (WordPress)
 Plugin URI: http://wordpress.org/plugins/wp-inspire/
@@ -65,22 +62,22 @@ function wp_inspire_css()
 {
     echo '
 	<style>
-	#dolly {
+	#wp-inspire {
 		float: right;
 		padding: 5px 10px;
 		margin: 0;
 		font-size: 12px;
 		line-height: 1.6666;
 	}
-	.rtl #dolly {
+	.rtl #wp-inspire {
 		float: left;
 	}
-	.block-editor-page #dolly {
+	.block-editor-page #wp-inspire {
 		display: none;
 	}
 	@media screen and (max-width: 782px) {
-		#dolly,
-		.rtl #dolly {
+		#wp-inspire,
+		.rtl #wp-inspire {
 			float: none;
 			padding-left: 0;
 			padding-right: 0;
