@@ -1,13 +1,13 @@
 <?php
 /*
-Plugin Name: Inspire (WordPress)
-Plugin URI: http://wordpress.org/plugins/wp-inspire/
+Plugin Name: Inspire
+Plugin URI: http://wordpress.org/plugins/inspire-quote/
 Description: A port of the Inspire command from Laravel to add an inspirational quote in the upper right of your admin screen.
 Author: Jason McCreary
 Version: 0.1.0
 */
 
-function wp_inspire_get_quote()
+function wppm_inspire_get_quote()
 {
     $quotes = [
         'Act only according to that maxim whereby you can, at the same time, will that it should become a universal law. - Immanuel Kant',
@@ -40,44 +40,43 @@ function wp_inspire_get_quote()
     return wptexturize($quotes[wp_rand(0, count($quotes) - 1)]);
 }
 
-// This just echoes the chosen line, we'll position it later.
-function wp_inspire()
+function wppm_inspire()
 {
-    $chosen = wp_inspire_get_quote();
+    $chosen = wppm_inspire_get_quote();
     $lang = '';
     if (substr(get_user_locale(), 0, 3) !== 'en_') {
         $lang = ' lang="en"';
     }
 
     printf(
-        '<p id="wp-inspire"><span dir="ltr"%s>%s</span></p>',
+        '<p id="inspire-quote"><span dir="ltr"%s>%s</span></p>',
         esc_attr($lang),
         esc_html($chosen)
     );
 }
 
-add_action('admin_notices', 'wp_inspire');
+add_action('admin_notices', 'wppm_inspire');
 
-function wp_inspire_css()
+function wppm_inspire_css()
 {
     echo '
 	<style>
-	#wp-inspire {
+	#inspire-quote {
 		float: right;
 		padding: 5px 10px;
 		margin: 0;
 		font-size: 12px;
 		line-height: 1.6666;
 	}
-	.rtl #wp-inspire {
+	.rtl #inspire-quote {
 		float: left;
 	}
-	.block-editor-page #wp-inspire {
+	.block-editor-page #inspire-quote {
 		display: none;
 	}
 	@media screen and (max-width: 782px) {
-		#wp-inspire,
-		.rtl #wp-inspire {
+		#inspire-quote,
+		.rtl #inspire-quote {
 			float: none;
 			padding-left: 0;
 			padding-right: 0;
@@ -87,4 +86,4 @@ function wp_inspire_css()
 	';
 }
 
-add_action('admin_head', 'wp_inspire_css');
+add_action('admin_head', 'wppm_inspire_css');

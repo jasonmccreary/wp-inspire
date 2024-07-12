@@ -1,4 +1,4 @@
-=== WP Inspire ===
+=== Inspire ===
 Stable tag: 0.1.0
 Tested up to: 6.4
 Requires at least: 4.6
@@ -9,4 +9,4 @@ A port of the Inspire command from Laravel to add an inspirational quote in the 
 
 == Description ==
 
-A port of the <code>Inspire</code> command from [Laravel](https://laravel.com/) to add an inspirational quote in the upper right of your admin screen. Inspired by the [Hello Dolly](https://wordpress.org/plugins/hello-dolly/) plugin.
+A port of the <code>Inspire</code> command from [Laravel](https://laravel.com/) to add an inspirational quote in the upper right of your admin screen, similar to the [Hello Dolly](https://wordpress.org/plugins/hello-dolly/) plugin.
