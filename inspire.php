@@ -1,10 +1,12 @@
 <?php
 /*
-Plugin Name: Inspiring Quotes
-Plugin URI: http://wordpress.org/plugins/inspiring-quotes/
-Description: A port of the Inspire command from Laravel to add an inspirational quote in the upper right of your admin screen.
-Author: Jason McCreary
-Version: 0.1.0
+ * Plugin Name: Inspiring Quotes
+ * Plugin URI: http://wordpress.org/plugins/inspiring-quotes/
+ * Description: A port of the Inspire command from Laravel to add an inspirational quote in the upper right of your admin screen.
+ * License: GPL v2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Author: Jason McCreary
+ * Version: 0.1.0
 */
 
 function wppm_inspire_get_quote()
