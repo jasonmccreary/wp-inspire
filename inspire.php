@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Inspire
-Plugin URI: http://wordpress.org/plugins/inspire-quote/
+Plugin Name: Inspiring Quotes
+Plugin URI: http://wordpress.org/plugins/inspiring-quotes/
 Description: A port of the Inspire command from Laravel to add an inspirational quote in the upper right of your admin screen.
 Author: Jason McCreary
 Version: 0.1.0

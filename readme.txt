@@ -1,4 +1,4 @@
-=== Inspire ===
+=== Inspiring Quotes ===
 Stable tag: 0.1.0
 Tested up to: 6.4
 Requires at least: 4.6
