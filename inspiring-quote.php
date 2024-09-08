@@ -6,7 +6,8 @@
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Author: Jason McCreary
- * Version: 0.1.0
+ * Version: 0.1.1
+ * Tested up to: 6.6
 */
 
 function wppm_inspire_get_quote()
