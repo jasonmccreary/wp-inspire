@@ -62,8 +62,7 @@ add_action('admin_notices', 'wppm_inspire');
 
 function wppm_inspire_css()
 {
-    echo '
-	<style>
+    wp_add_inline_style('wppm-inspiring-quotes-css', '
 	#inspire-quote {
 		float: right;
 		padding: 5px 10px;
@@ -84,9 +83,7 @@ function wppm_inspire_css()
 			padding-left: 0;
 			padding-right: 0;
 		}
-	}
-	</style>
-	';
+	}');
 }
 
 add_action('admin_head', 'wppm_inspire_css');
