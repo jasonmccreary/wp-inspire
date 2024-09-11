@@ -43,7 +43,7 @@ function wppm_inspire_get_quote()
     return wptexturize($quotes[wp_rand(0, count($quotes) - 1)]);
 }
 
-function wppm_inspire()
+function wppm_inspiring_quotes()
 {
     $chosen = wppm_inspire_get_quote();
     $lang = '';
@@ -58,11 +58,11 @@ function wppm_inspire()
     );
 }
 
-add_action('admin_notices', 'wppm_inspire');
+add_action('admin_notices', 'wppm_inspiring_quotes');
 
-function wppm_inspire_css()
+function wppm_inspiring_quotes_css()
 {
-    wp_enqueue_style('inspiring-quote-css', plugin_dir_url(__FILE__) . 'inspiring-quote.css');
+    wp_enqueue_style('inspiring-quotes-css', plugin_dir_url(__FILE__).'inspiring-quotes.css');
 }
 
-add_action('admin_enqueue_scripts', 'wppm_inspire_css');
+add_action('admin_enqueue_scripts', 'wppm_inspiring_quotes_css');
