@@ -1,0 +1,24 @@
+#inspire-quote {
+    float: right;
+    padding: 5px 10px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.6666;
+}
+
+.rtl #inspire-quote {
+    float: left;
+}
+
+.block-editor-page #inspire-quote {
+    display: none;
+}
+
+@media screen and (max-width: 782px) {
+    #inspire-quote,
+    .rtl #inspire-quote {
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

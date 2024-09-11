@@ -62,28 +62,7 @@ add_action('admin_notices', 'wppm_inspire');
 
 function wppm_inspire_css()
 {
-    wp_add_inline_style('wppm-inspiring-quotes-css', '
-	#inspire-quote {
-		float: right;
-		padding: 5px 10px;
-		margin: 0;
-		font-size: 12px;
-		line-height: 1.6666;
-	}
-	.rtl #inspire-quote {
-		float: left;
-	}
-	.block-editor-page #inspire-quote {
-		display: none;
-	}
-	@media screen and (max-width: 782px) {
-		#inspire-quote,
-		.rtl #inspire-quote {
-			float: none;
-			padding-left: 0;
-			padding-right: 0;
-		}
-	}');
+    wp_enqueue_style('inspiring-quote-css', plugin_dir_url(__FILE__) . 'inspiring-quote.css');
 }
 
-add_action('admin_head', 'wppm_inspire_css');
+add_action('admin_enqueue_scripts', 'wppm_inspire_css');
