@@ -1,6 +1,6 @@
 === Inspiring Quotes ===
-Stable tag: 0.1.1
-Tested up to: 6.6
+Stable tag: 0.2.0
+Tested up to: 6.7
 Requires at least: 4.6
 License: GPLv2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
